@@ -15,10 +15,33 @@ MonoBehaviour:
   Path: ../../FMOD Projects/TheDayTheWorldWentDark/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637474479246760368
+  lastModified: 637474557578646866
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-1226622481721209671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NightAMB_1
+  m_EditorClassIdentifier: 
+  Path: event:/NightAMB_1
+  guid: 4f2c0ffe2c36c849aa1d55c1611e583e
+  Banks:
+  - {fileID: -7013109664013319710}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 128000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36,12 +59,13 @@ MonoBehaviour:
   - {fileID: -7013109664013319710}
   EditorEvents:
   - {fileID: 1775282526519689483}
+  - {fileID: -1226622481721209671}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7013109664013319710}
   StringsBanks:
   - {fileID: 5766463372792157464}
-  stringsBankWriteTime: 637474479246935034
+  stringsBankWriteTime: 637474557578782286
   cacheVersion: 6
 --- !u!114 &1775282526519689483
 MonoBehaviour:
@@ -81,9 +105,9 @@ MonoBehaviour:
   Path: ../../FMOD Projects/TheDayTheWorldWentDark/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637474479246935034
+  lastModified: 637474557578782286
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 746
+    Value: 792
   Exists: 1
