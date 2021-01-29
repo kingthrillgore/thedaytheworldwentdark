@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 6f;
     public float turnInterpolateTime = 0.1f;
     private float turnSmoothInterpolate;
+    private bool _IsPlayerWithinRange = false;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,29 @@ public class PlayerController : MonoBehaviour
 
             Vector3 movedir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(movedir.normalized * speed * Time.deltaTime);
+        }
+
+        if (Input.GetKeyDown(KeyCode.E)) {
+            if (_IsPlayerWithinRange == true) {
+                Debug.Log("Livin Large");
+            }
+        }
+    }
+
+    
+    // Fired off when something enters the trigger space of the attached GameObject
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "NPC") {
+            _IsPlayerWithinRange = true;
+        }
+    }
+
+    // Fired off when something exits the trigger space of the attached GameObject
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "NPC") {
+            _IsPlayerWithinRange = false;
         }
     }
 }
