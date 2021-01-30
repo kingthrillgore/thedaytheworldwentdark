@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 2577588110324465762}
   - component: {fileID: 2577588110324465763}
   - component: {fileID: 2577588110324465773}
+  - component: {fileID: 805335687811581502}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -242,3 +243,19 @@ MonoBehaviour:
   FadeoutCooldown: 5
   FadeoutRunning: 0
   SoundObject: {fileID: 0}
+--- !u!54 &805335687811581502
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2577588110324465761}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 4
+  m_CollisionDetection: 0
