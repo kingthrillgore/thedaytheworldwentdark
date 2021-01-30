@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float turnInterpolateTime = 0.1f;
     private float turnSmoothInterpolate;
     private bool _IsPlayerWithinRange = false;
+    private GameObject ActiveNPC;
 
     // Start is called before the first frame update
     void Start()
@@ -35,12 +36,6 @@ public class PlayerController : MonoBehaviour
             Vector3 movedir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(movedir.normalized * speed * Time.deltaTime);
         }
-
-        if (Input.GetKeyDown(KeyCode.E)) {
-            if (_IsPlayerWithinRange == true) {
-                Debug.Log("Livin Large");
-            }
-        }
     }
 
     
@@ -48,7 +43,28 @@ public class PlayerController : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "NPC") {
+            // TODO add sanity check so if this.ActiveNPC is set, nothing happens.
             _IsPlayerWithinRange = true;
+            Debug.Log("Collision Detected");
+            /* Component[] components = other.gameObject.GetComponents(typeof(Component));
+            FollowPlayer FP1 = other.gameObject.GetComponent<FollowPlayer>(); */
+
+            Debug.Log("FollowPlayer Retrieved");
+            // Set the follow behavior
+            other.gameObject.GetComponent<FollowPlayer>().target = this.transform;
+
+            // TODO We will need to keep track of our traveler so we only keep one at a time
+            this.ActiveNPC = other.gameObject;
+        }
+
+        // TODO Another check down the road for when the Player eventually collides with the campfire
+        if (other.tag == "Fireplace") {
+            // Clear out our companion's target
+            this.ActiveNPC.GetComponent<FollowPlayer>().target = null;
+
+            // Lerp the target to the Fireplace
+
+            // Turn off their collide so nothing else can happen to them.
         }
     }
 
@@ -57,6 +73,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.tag == "NPC") {
             _IsPlayerWithinRange = false;
+            
         }
     }
 }

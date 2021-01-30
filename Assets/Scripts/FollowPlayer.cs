@@ -21,14 +21,4 @@ public class FollowPlayer : MonoBehaviour
         // Tells the NavMeshAgent who it needs to annoy
         nav.SetDestination(target.position);
     }
-
-    IEnumerator watchForKeyPress()
-    {
-        while (_IsPlayerWithinRange) {
-            if (Input.GetKey(KeyCode.E)) {
-                Debug.Log("Someone's off the chain again.");
-            }
-            yield return null;
-        }
-    }
 }
