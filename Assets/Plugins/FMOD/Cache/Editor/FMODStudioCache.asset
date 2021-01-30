@@ -15,9 +15,49 @@ MonoBehaviour:
   Path: ../../FMOD Projects/TheDayTheWorldWentDark/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637474557578646866
+  lastModified: 637475574931631463
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &-6343562899601335892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambience/AmbienceType
+  m_EditorClassIdentifier: 
+  Name: AmbienceType
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-2301669700506847300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambience/AmbienceType
+  m_EditorClassIdentifier: 
+  Name: AmbienceType
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
   Exists: 1
 --- !u!114 &-1226622481721209671
 MonoBehaviour:
@@ -58,14 +98,15 @@ MonoBehaviour:
   - {fileID: 5766463372792157464}
   - {fileID: -7013109664013319710}
   EditorEvents:
-  - {fileID: 1775282526519689483}
   - {fileID: -1226622481721209671}
+  - {fileID: 7023996196860162272}
+  - {fileID: 7053602171205714866}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7013109664013319710}
   StringsBanks:
   - {fileID: 5766463372792157464}
-  stringsBankWriteTime: 637474557578782286
+  stringsBankWriteTime: 637475574931701621
   cacheVersion: 6
 --- !u!114 &1775282526519689483
 MonoBehaviour:
@@ -90,6 +131,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 128000
+--- !u!114 &3798597935434770827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambience/AmbienceType
+  m_EditorClassIdentifier: 
+  Name: AmbienceType
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &5766463372792157464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,9 +166,56 @@ MonoBehaviour:
   Path: ../../FMOD Projects/TheDayTheWorldWentDark/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637474557578782286
+  lastModified: 637475574931701621
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 792
+    Value: 888
   Exists: 1
+--- !u!114 &7023996196860162272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience
+  guid: 50e18d086085964fa673b4ecfcb6efb3
+  Banks:
+  - {fileID: -7013109664013319710}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2301669700506847300}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &7053602171205714866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fire
+  m_EditorClassIdentifier: 
+  Path: event:/Fire
+  guid: 228b8e7c55688442b361ec11b7e35823
+  Banks:
+  - {fileID: -7013109664013319710}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 55000

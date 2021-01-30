@@ -6,10 +6,11 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager mainAudio;
 
-   
+    public string ambience;
+    public FMOD.Studio.EventInstance ambienceEvent;
 
 
-    private void Awake()
+    void Awake()
     {
         if (mainAudio != null)
         {
@@ -26,6 +27,8 @@ public class SoundManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/NightAMB_1");
+        ambienceEvent = FMODUnity.RuntimeManager.CreateInstance(ambience);
+        ambienceEvent.start();
+        //FMODUnity.RuntimeManager.PlayOneShot("event:/NightAMB_1");
     }
 }
