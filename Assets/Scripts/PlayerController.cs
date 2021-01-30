@@ -61,10 +61,13 @@ public class PlayerController : MonoBehaviour
         if (other.tag == "Fireplace") {
             // Clear out our companion's target
             this.ActiveNPC.GetComponent<FollowPlayer>().target = null;
+            Debug.Log("NPC is safe.");
 
             // Lerp the target to the Fireplace
+            this.ActiveNPC.transform.position = Vector3.MoveTowards(this.ActiveNPC.transform.position, other.transform.position, 2f * Time.deltaTime);
 
             // Turn off their collide so nothing else can happen to them.
+            this.ActiveNPC.GetComponent<BoxCollider>().enabled = false;
         }
     }
 
