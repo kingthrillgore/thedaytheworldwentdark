@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002B2076B7868 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001E1143A00A8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -15,123 +15,12 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SystemI::createSound                     : filename = ..\..\FMOD Projects\TheDayTheWorldWentDark\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002B21E9164A8 : node = 000002B4754DD5F0
-[LOG] SystemI::createSound                     : add node to async list : head = 000002B20E529E98.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002B21E9164A8
-[LOG] SystemI::createSoundInternal             :     Create name='..\..\FMOD Projects\TheDayTheWorldWentDark\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4163008
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10816
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002B4754DD700
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Woods', format=5, channels=2, frequency=48000, lengthbytes=810336, lengthpcm=2885426, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.041595.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002B21E9164A8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002B21E9158D8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002B21E9158D8
-[LOG] SoundI::release                          : NightAmb1 (000002B475142218)
-[LOG] SoundI::release                          :     NightAmb1 (000002B446176108)
-[LOG] SoundI::release                          :     NightAmb1 (000002B475140568)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002B475141EB8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002B475141EB8
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SystemI::createSound                     : filename = ..\..\FMOD Projects\TheDayTheWorldWentDark\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002B21E916808 : node = 000002B4754DD730
-[LOG] SystemI::createSound                     : add node to async list : head = 000002B20E529E98.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002B21E916808
-[LOG] SystemI::createSoundInternal             :     Create name='..\..\FMOD Projects\TheDayTheWorldWentDark\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4163008
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10816
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002B4754DD840
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='NightAmb1', format=5, channels=2, frequency=48000, lengthbytes=1776864, lengthpcm=6144000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988514.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002B21E916808
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002B21E916658
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002B21E916658
-[LOG] SoundI::release                          : Ambience_Woods (000002B21E9164A8)
-[LOG] SoundI::release                          :     Ambience_Woods (000002B446174088)
-[LOG] SoundI::release                          :     Ambience_Woods (000002B21E9158D8)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SystemI::createSound                     : filename = ..\..\FMOD Projects\TheDayTheWorldWentDark\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002B21E915068 : node = 000002B443B52910
-[LOG] SystemI::createSound                     : add node to async list : head = 000002B20E529E98.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002B21E915068
-[LOG] SystemI::createSoundInternal             :     Create name='..\..\FMOD Projects\TheDayTheWorldWentDark\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4163008
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10816
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002B443B52A20
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Ocean_Distant_Loop', format=5, channels=2, frequency=48000, lengthbytes=983520, lengthpcm=3845592, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.284821.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002B21E915068
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002B21E915C38
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002B21E915C38
-[LOG] SoundI::release                          : NightAmb1 (000002B21E916808)
-[LOG] SoundI::release                          :     NightAmb1 (000002B446174568)
-[LOG] SoundI::release                          :     NightAmb1 (000002B21E916658)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002B475141EB8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002B475141EB8
-[LOG] SystemI::createSound                     : filename = ..\..\FMOD Projects\TheDayTheWorldWentDark\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002B21E916808 : node = 000002B210811870
-[LOG] SystemI::createSound                     : add node to async list : head = 000002B20E529E98.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002B21E916808
-[LOG] SystemI::createSoundInternal             :     Create name='..\..\FMOD Projects\TheDayTheWorldWentDark\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4163008
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10816
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002B210811980
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='NightAmb1', format=5, channels=2, frequency=48000, lengthbytes=1776864, lengthpcm=6144000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988514.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002B21E916808
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002B21E9153C8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002B21E9153C8
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SoundI::release                          : Ambience_Ocean_Distant_Loop (000002B21E915068)
-[LOG] SoundI::release                          :     Ambience_Ocean_Distant_Loop (000002B446177B08)
-[LOG] SoundI::release                          :     Ambience_Ocean_Distant_Loop (000002B21E915C38)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SoundI::release                          : Doodad_Campfire_Loop (000002B46B5E2E38)
-[LOG] SoundI::release                          :     Doodad_Campfire_Loop (000002B446175C28)
-[LOG] SoundI::release                          :     Doodad_Campfire_Loop (000002B475141EB8)
-[LOG] SoundI::release                          : NightAmb1 (000002B21E916808)
-[LOG] SoundI::release                          :     NightAmb1 (000002B446174A48)
-[LOG] SoundI::release                          :     NightAmb1 (000002B21E9153C8)
-[LOG] SoundI::release                          :  (000002B46B41A678)
-[LOG] SoundI::release                          :     OneOff_Owl_01 (000002B446174228)
-[LOG] SoundI::release                          :  (000002B46B41AC38)
-[LOG] SoundI::release                          :     OneOff_Owl_02 (000002B4461755A8)
-[LOG] SoundI::release                          :  (000002B46B41ADA8)
-[LOG] SoundI::release                          :     OneOff_Owl_03 (000002B4461750C8)
-[LOG] SoundI::release                          :  (000002B46B41B1F8)
-[LOG] SoundI::release                          :     OneOff_Owl_04 (000002B446175748)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
@@ -139,3 +28,10 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::close                           : Closed.
