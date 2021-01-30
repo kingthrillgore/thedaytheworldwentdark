@@ -7,7 +7,9 @@ public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
     public Transform camera;
+    
     public float speed = 6f;
+    
     public float turnInterpolateTime = 0.1f;
     private float turnSmoothInterpolate;
     private bool _IsPlayerWithinRange = false;
@@ -25,6 +27,8 @@ public class PlayerController : MonoBehaviour
         float horiz = Input.GetAxisRaw("Horizontal"); // W, S, Arrow U D
         float vert = Input.GetAxisRaw("Vertical"); // A, D, Arrow L R
         Vector3 dir = new Vector3(horiz, 0f, vert);
+       
+        
 
         if (dir.magnitude >= 0.1f) {
             float targetAngle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg + camera.eulerAngles.y;
@@ -38,6 +42,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+ 
     
     // Fired off when something enters the trigger space of the attached GameObject
     void OnTriggerEnter(Collider other)
