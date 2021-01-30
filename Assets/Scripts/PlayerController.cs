@@ -53,11 +53,9 @@ public class PlayerController : MonoBehaviour
             // Set the follow behavior
             other.gameObject.GetComponent<FollowPlayer>().target = this.transform;
 
-            // TODO We will need to keep track of our traveler so we only keep one at a time
             this.ActiveNPC = other.gameObject;
         }
 
-        // TODO Another check down the road for when the Player eventually collides with the campfire
         if (other.tag == "Fireplace") {
             // Clear out our companion's target
             this.ActiveNPC.GetComponent<FollowPlayer>().target = null;
@@ -68,6 +66,7 @@ public class PlayerController : MonoBehaviour
 
             // Turn off their collide so nothing else can happen to them.
             this.ActiveNPC.GetComponent<BoxCollider>().enabled = false;
+            this.ActiveNPC = null;
         }
     }
 
