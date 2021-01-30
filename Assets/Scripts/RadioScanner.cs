@@ -10,6 +10,7 @@ public class RadioScanner : MonoBehaviour
     delegate void KillAudioPlay(int num);
     StartAudioPlay startAudio;
     KillAudioPlay killAudio;
+    public GameObject SoundObject;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +35,7 @@ public class RadioScanner : MonoBehaviour
 
                 // TODO Send a delegate to the Sound Engine we are facing an NPC
                 //startAudio(1);
+                //SoundObject.playAudio();
 
                 if (FadeoutRunning) {
                     if (FadeoutCooldown > 0) {
@@ -43,6 +45,7 @@ public class RadioScanner : MonoBehaviour
                         Debug.Log("Fadeout Radio");
                         //TODO delegate to kill sound
                         //killAudio(1);
+                        //SoundObject.StopAllAudio()
                         FadeoutCooldown = 0;
                         FadeoutRunning = false;
                     }
