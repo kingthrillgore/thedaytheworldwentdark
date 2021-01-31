@@ -23,6 +23,72 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4990
+--- !u!114 &-7741094806914679400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambience/AmbienceType
+  m_EditorClassIdentifier: 
+  Name: AmbienceType
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-7401688663384901367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/TambSting
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/TambSting
+  guid: cc5c06e427b53c42beae145d0b7c5a6c
+  Banks:
+  - {fileID: -7013109664013319710}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4094
+--- !u!114 &-7399463122194158510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/FluteSting
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/FluteSting
+  guid: beec9f2f602c334fba3a88a700bce67b
+  Banks:
+  - {fileID: -7013109664013319710}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2944
 --- !u!114 &-7013109664013319710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,11 +104,31 @@ MonoBehaviour:
   Path: ../../FMOD Projects/TheDayTheWorldWentDark/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637476536174307505
+  lastModified: 637476548174936616
   LoadResult: 0
   FileSizes: []
   Exists: 1
 --- !u!114 &-6764934929302088196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-6677472563132435230
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,6 +214,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 13124
+--- !u!114 &-3621530601869680044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/ViolinSting
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/ViolinSting
+  guid: 9a3bf50fe8808b44a81d9880a26dc610
+  Banks:
+  - {fileID: -7013109664013319710}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4444
 --- !u!114 &-3397416462302014460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +304,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -6764934929302088196}
+  - {fileID: -6677472563132435230}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -261,7 +370,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-215614215071096979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,12 +416,18 @@ MonoBehaviour:
   - {fileID: 8048201652452047853}
   - {fileID: -4942475054128808240}
   - {fileID: -2601075229165302427}
+  - {fileID: 9004414164475608858}
+  - {fileID: -3621530601869680044}
+  - {fileID: -7399463122194158510}
+  - {fileID: -7401688663384901367}
+  - {fileID: 3098588994911824233}
+  - {fileID: 2452855265885919569}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7013109664013319710}
   StringsBanks:
   - {fileID: 5766463372792157464}
-  stringsBankWriteTime: 637476536174377318
+  stringsBankWriteTime: 637476548175006457
   cacheVersion: 6
 --- !u!114 &1775282526519689483
 MonoBehaviour:
@@ -357,6 +472,52 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &2452855265885919569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/BassSting
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/BassSting
+  guid: dc72e7b68ec19944877a13919db7e7c9
+  Banks:
+  - {fileID: -7013109664013319710}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3944
+--- !u!114 &3098588994911824233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/OcarinaSting
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/OcarinaSting
+  guid: d9e53ab300c7cf449b34aa0088cb70ac
+  Banks:
+  - {fileID: -7013109664013319710}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4944
 --- !u!114 &3798597935434770827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,11 +573,11 @@ MonoBehaviour:
   Path: ../../FMOD Projects/TheDayTheWorldWentDark/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637476536174377318
+  lastModified: 637476548175006457
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1244
+    Value: 1522
   Exists: 1
 --- !u!114 &6089434298762973412
 MonoBehaviour:
@@ -458,7 +619,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -667440748489695324}
+  - {fileID: -7741094806914679400}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -531,3 +692,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 12750
+--- !u!114 &9004414164475608858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/MX_GuitSting
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/MX_GuitSting
+  guid: 3f48b882705f3a489af6a2bbf6bb63a7
+  Banks:
+  - {fileID: -7013109664013319710}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3944
