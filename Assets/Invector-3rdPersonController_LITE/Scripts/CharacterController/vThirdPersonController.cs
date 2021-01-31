@@ -4,6 +4,20 @@ namespace Invector.vCharacterController
 {
     public class vThirdPersonController : vThirdPersonAnimator
     {
+
+        private bool _IsPlayerWithinRange = false;
+        private GameObject ActiveNPC;
+
+       
+        public FMOD.Studio.EventInstance Radio1Event;
+        public FMOD.Studio.EventInstance Radio2Event;
+        public FMOD.Studio.EventInstance Radio3Event;
+
+        void Start()
+        {
+            Radio1Event = FMODUnity.RuntimeManager.CreateInstance(SoundManager.mainAudio.Radio1);    
+        }
+
         public virtual void ControlAnimatorRootMotion()
         {
             if (!this.enabled) return;
@@ -124,5 +138,75 @@ namespace Invector.vCharacterController
             else
                 animator.CrossFadeInFixedTime("JumpMove", .2f);
         }
+
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.tag == "NPC")
+            {
+                // TODO add sanity check so if this.ActiveNPC is set, nothing happens.
+                _IsPlayerWithinRange = true;
+                Debug.Log("Collision Detected");
+                /* Component[] components = other.gameObject.GetComponents(typeof(Component));
+                FollowPlayer FP1 = other.gameObject.GetComponent<FollowPlayer>(); */
+
+                Debug.Log("FollowPlayer Retrieved");
+                // Set the follow behavior
+                other.gameObject.GetComponent<FollowPlayer>().target = this.transform;
+
+                this.ActiveNPC = other.gameObject;
+            }
+
+            if (other.tag == "Fireplace")
+            {
+                // Clear out our companion's target
+                this.ActiveNPC.GetComponent<FollowPlayer>().target = null;
+                Debug.Log("NPC is safe.");
+
+                // Lerp the target to the Fireplace
+                this.ActiveNPC.transform.position = Vector3.MoveTowards(this.ActiveNPC.transform.position, other.transform.position, 2f * Time.deltaTime);
+
+                // Turn off their collide so nothing else can happen to them.
+                this.ActiveNPC.GetComponent<BoxCollider>().enabled = false;
+                this.ActiveNPC = null;
+            }
+        }
+
+        // Fired off when something exits the trigger space of the attached GameObject
+        void OnTriggerExit(Collider other)
+        {
+            if (other.tag == "NPC")
+            {
+                _IsPlayerWithinRange = false;
+
+            }
+        }
+
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Dialog/DockGirlDia");
+                
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Dialog/DogDia");
+
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Dialog/WoodsGuyDia");
+            }
+
+
+            if (Input.GetKey("escape"))
+            {
+                Application.Quit();
+            }
+        }
+
+        
     }
 }
+
