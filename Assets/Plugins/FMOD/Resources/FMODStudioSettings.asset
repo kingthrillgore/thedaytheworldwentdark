@@ -204,8 +204,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../FMOD Projects/TheDayTheWorldWentDark/TheDayTheWorldWentDark.fspro
-  sourceBankPath: ..\..\FMOD Projects\TheDayTheWorldWentDark\Build
+  sourceProjectPath: TheDayTheWorldWentDark/TheDayTheWorldWentDark.fspro
+  sourceBankPath: TheDayTheWorldWentDark/Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0

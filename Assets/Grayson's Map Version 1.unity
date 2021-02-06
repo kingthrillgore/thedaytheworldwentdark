@@ -1231,6 +1231,35 @@ Transform:
   m_Father: {fileID: 1396250817}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: -92, z: -1.7}
+--- !u!1 &280195845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6252637358216532273, guid: d46cf7c083e7a7b4d989ed0e568e8559,
+    type: 3}
+  m_PrefabInstance: {fileID: 2087613893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &280195856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280195845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambience Home/Seagulls
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &324823766
 GameObject:
   m_ObjectHideFlags: 0
@@ -2046,7 +2075,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538132932}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
@@ -3332,6 +3361,16 @@ PrefabInstance:
     - target: {fileID: 4482561631386739604, guid: d8582f6b0d0386b48acd6ab7921c5b45,
         type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4482561631386739604, guid: d8582f6b0d0386b48acd6ab7921c5b45,
+        type: 3}
+      propertyPath: attenuationObject
+      value: 
+      objectReference: {fileID: 538132932}
+    - target: {fileID: 4482561631386739606, guid: d8582f6b0d0386b48acd6ab7921c5b45,
+        type: 3}
+      propertyPath: m_AllowDynamicResolution
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4482561631386739607, guid: d8582f6b0d0386b48acd6ab7921c5b45,
@@ -4375,7 +4414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1459057353
 Light:
   m_ObjectHideFlags: 0
@@ -4385,7 +4424,7 @@ Light:
   m_GameObject: {fileID: 1459057352}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 0
+  m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 3.53
@@ -4444,13 +4483,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459057352}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: -0.96522313, y: -0.0098706875, z: -0.25863072, w: 0.036837887}
+  m_LocalPosition: {x: 293.4, y: 128.5, z: 178.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: -175.629, y: -30, z: 0}
 --- !u!1 &1491784706
 GameObject:
   m_ObjectHideFlags: 0
