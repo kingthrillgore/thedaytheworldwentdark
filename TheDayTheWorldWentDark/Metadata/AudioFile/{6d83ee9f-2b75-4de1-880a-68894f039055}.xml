@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{6d83ee9f-2b75-4de1-880a-68894f039055}">
+		<property name="assetPath">
+			<value>one_shot_fiddle_v00r05.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>4.944</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7035ac40-cf02-4024-94b8-1de7f24eead4}</destination>
+		</relationship>
+	</object>
+</objects>

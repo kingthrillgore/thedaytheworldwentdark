@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{5056d8d3-21d4-4d9f-acd1-9890e60540fa}">
+		<property name="assetPath">
+			<value>OneOff_Dog_03.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.41736961451247168</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7035ac40-cf02-4024-94b8-1de7f24eead4}</destination>
+		</relationship>
+	</object>
+</objects>
