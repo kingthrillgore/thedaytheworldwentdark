@@ -106,6 +106,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-8391745344735068941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-8327072329108079981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,7 +737,7 @@ MonoBehaviour:
   Path: TheDayTheWorldWentDark/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637482218970000000
+  lastModified: 637484050851265845
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -846,7 +866,7 @@ MonoBehaviour:
   Path: TheDayTheWorldWentDark/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637482218970000000
+  lastModified: 637484050851245900
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1307,7 +1327,7 @@ MonoBehaviour:
   - {fileID: -3298596923451118116}
   StringsBanks:
   - {fileID: -3917331194774442718}
-  stringsBankWriteTime: 637482218970000000
+  stringsBankWriteTime: 637484050851265845
   cacheVersion: 6
 --- !u!114 &245886397462548191
 MonoBehaviour:
@@ -1742,6 +1762,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4944
+--- !u!114 &3197972101087282868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambience/AmbienceType
+  m_EditorClassIdentifier: 
+  Name: AmbienceType
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &3267734270718324857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1973,7 +2013,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 8884946883352911386}
+  - {fileID: -8391745344735068941}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -2037,7 +2077,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 7278848942523495928}
+  - {fileID: 3197972101087282868}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -2427,7 +2467,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &7336144172277163054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2637,7 +2677,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &9004414164475608858
 MonoBehaviour:
   m_ObjectHideFlags: 0
