@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9126572892061309591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambience/AmbienceType
+  m_EditorClassIdentifier: 
+  Name: AmbienceType
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-9122410022294158850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,6 +63,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-8938654645613429350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-8923657571873767879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,7 +777,7 @@ MonoBehaviour:
   Path: TheDayTheWorldWentDark/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637484050851265845
+  lastModified: 637482218970000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -866,7 +906,7 @@ MonoBehaviour:
   Path: TheDayTheWorldWentDark/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637484050851245900
+  lastModified: 637482218970000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1327,7 +1367,7 @@ MonoBehaviour:
   - {fileID: -3298596923451118116}
   StringsBanks:
   - {fileID: -3917331194774442718}
-  stringsBankWriteTime: 637484050851265845
+  stringsBankWriteTime: 637482218970000000
   cacheVersion: 6
 --- !u!114 &245886397462548191
 MonoBehaviour:
@@ -2013,7 +2053,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -8391745344735068941}
+  - {fileID: -8938654645613429350}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -2077,7 +2117,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 3197972101087282868}
+  - {fileID: -9126572892061309591}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
