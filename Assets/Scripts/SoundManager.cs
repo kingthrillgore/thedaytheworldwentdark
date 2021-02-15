@@ -9,8 +9,20 @@ public class SoundManager : MonoBehaviour
     public string ambience;
     public FMOD.Studio.EventInstance ambienceEvent;
 
-    public string ambientMusic;
-    public FMOD.Studio.EventInstance ambientMusicEvent;
+    // public string ambientMusic;
+    // public FMOD.Studio.EventInstance ambientMusicEvent;
+
+
+
+
+
+
+public string weirdAmbience;
+public FMOD.Studio.EventInstance weirdAmbienceEvent;
+
+
+
+
 
     public string MX_1;
     //public FMOD.Studio.EventInstance MX_1Event;
@@ -61,8 +73,11 @@ public class SoundManager : MonoBehaviour
 
        // FMODUnity.RuntimeManager.PlayOneShot("event:/MUSIC/MX_Ambience");
 
-        ambientMusicEvent = FMODUnity.RuntimeManager.CreateInstance(ambientMusic);
-        ambientMusicEvent.start();
+       // ambientMusicEvent = FMODUnity.RuntimeManager.CreateInstance(ambientMusic);
+      //  ambientMusicEvent.start();
+
+        weirdAmbienceEvent = FMODUnity.RuntimeManager.CreateInstance(weirdAmbience);
+        weirdAmbienceEvent.start();
 
         /*MX_1Event = FMODUnity.RuntimeManager.CreateInstance(MX_1);
         MX_1Event.start();

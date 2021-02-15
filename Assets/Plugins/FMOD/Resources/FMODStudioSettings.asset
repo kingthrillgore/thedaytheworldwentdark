@@ -205,7 +205,7 @@ MonoBehaviour:
   HasSourceProject: 1
   HasPlatforms: 1
   sourceProjectPath: TheDayTheWorldWentDark/TheDayTheWorldWentDark.fspro
-  sourceBankPath: TheDayTheWorldWentDark/Build
+  sourceBankPath: TheDayTheWorldWentDark\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
