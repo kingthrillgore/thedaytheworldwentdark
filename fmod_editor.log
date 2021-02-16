@@ -9,46 +9,46 @@
 [LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000022C872F98E8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000022C872FCB28 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000022C4B097FE8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000022C4B097FE8
-[LOG] SoundI::release                          : Hub NPC Tutorial (0000022C20FF5C68)
-[LOG] SoundI::release                          :     Hub NPC Tutorial (0000022C51D2D3E8)
-[LOG] SoundI::release                          :     Hub NPC Tutorial (0000022C4B096698)
-[LOG] SoundI::release                          : Dog_Panting_Loop (0000022C20FF5248)
-[LOG] SoundI::release                          :     Dog_Panting_Loop (0000022C51D32528)
-[LOG] SoundI::release                          :     Dog_Panting_Loop (0000022C4B096338)
-[LOG] SoundI::release                          : main_theme__v00r05_Ambiance (0000022C20FF5E18)
-[LOG] SoundI::release                          :     main_theme__v00r05_Ambiance (0000022C51D2D588)
-[LOG] SoundI::release                          :     main_theme__v00r05_Ambiance (0000022C4B097AD8)
-[LOG] SoundI::release                          : Doodad_Campfire_Loop (0000022C20FF5908)
-[LOG] SoundI::release                          :     Doodad_Campfire_Loop (0000022C51D2CD68)
-[LOG] SoundI::release                          :     Doodad_Campfire_Loop (0000022C4B096D58)
-[LOG] SoundI::release                          : NightAmb1 (0000022C2164E458)
-[LOG] SoundI::release                          :     NightAmb1 (0000022C51D326C8)
-[LOG] SoundI::release                          :     NightAmb1 (0000022C4B097FE8)
-[LOG] SoundI::release                          :  (0000022C4BC81968)
-[LOG] SoundI::release                          :     OneOff_Owl_01 (0000022C240954C8)
-[LOG] SoundI::release                          :  (0000022C4BC81F28)
-[LOG] SoundI::release                          :     OneOff_Owl_02 (0000022C24094FE8)
-[LOG] SoundI::release                          :  (0000022C4BC824E8)
-[LOG] SoundI::release                          :     OneOff_Owl_03 (0000022C240959A8)
-[LOG] SoundI::release                          :  (0000022C4BC82378)
-[LOG] SoundI::release                          :     OneOff_Owl_04 (0000022C24096508)
-[LOG] SoundI::release                          :  (0000022C4BC82208)
-[LOG] SoundI::release                          :     OneOff_Seagull_01 (0000022C24096368)
-[LOG] SoundI::release                          :  (0000022C4BC81AD8)
-[LOG] SoundI::release                          :     OneOff_Seagull_02 (0000022C24096848)
-[LOG] SoundI::release                          :  (0000022C4BC82938)
-[LOG] SoundI::release                          :     OneOff_Seagull_03 (0000022C24095808)
-[LOG] SoundI::release                          :  (0000022C4BC82098)
-[LOG] SoundI::release                          :     OneOff_Seagull_04 (0000022C24095328)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000022C220C83F8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000022C220C83F8
+[LOG] SoundI::release                          : Hub NPC Tutorial (0000022CD1E49F48)
+[LOG] SoundI::release                          :     Hub NPC Tutorial (0000022C51D2C068)
+[LOG] SoundI::release                          :     Hub NPC Tutorial (0000022C220C5668)
+[LOG] SoundI::release                          : Dog_Panting_Loop (0000022CD1E496D8)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (0000022C51D2DF48)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (0000022C220C23C8)
+[LOG] SoundI::release                          : main_theme__v00r05_Ambiance (0000022CD1E4AB18)
+[LOG] SoundI::release                          :     main_theme__v00r05_Ambiance (0000022C51D2E908)
+[LOG] SoundI::release                          :     main_theme__v00r05_Ambiance (0000022C220C59C8)
+[LOG] SoundI::release                          : Doodad_Campfire_Loop (0000022CD1E49888)
+[LOG] SoundI::release                          :     Doodad_Campfire_Loop (0000022C51D2D728)
+[LOG] SoundI::release                          :     Doodad_Campfire_Loop (0000022C220C2728)
+[LOG] SoundI::release                          : NightAmb1 (0000022CD1E4A608)
+[LOG] SoundI::release                          :     NightAmb1 (0000022C51D2EC48)
+[LOG] SoundI::release                          :     NightAmb1 (0000022C220C83F8)
+[LOG] SoundI::release                          :  (0000022CD1CEEC08)
+[LOG] SoundI::release                          :     OneOff_Owl_01 (0000022C871EF428)
+[LOG] SoundI::release                          :  (0000022CD1CEF058)
+[LOG] SoundI::release                          :     OneOff_Owl_02 (0000022C871EF5C8)
+[LOG] SoundI::release                          :  (0000022CD1CEF4A8)
+[LOG] SoundI::release                          :     OneOff_Owl_03 (0000022C871EF908)
+[LOG] SoundI::release                          :  (0000022CD1CEC818)
+[LOG] SoundI::release                          :     OneOff_Owl_04 (0000022C249D3FA8)
+[LOG] SoundI::release                          :  (0000022CD1CEE648)
+[LOG] SoundI::release                          :     OneOff_Seagull_01 (0000022C249D3E08)
+[LOG] SoundI::release                          :  (0000022CD1CECF48)
+[LOG] SoundI::release                          :     OneOff_Seagull_02 (0000022C871EF768)
+[LOG] SoundI::release                          :  (0000022CD1CEF338)
+[LOG] SoundI::release                          :     OneOff_Seagull_03 (0000022C871EFAA8)
+[LOG] SoundI::release                          :  (0000022CD1CED958)
+[LOG] SoundI::release                          :     OneOff_Seagull_04 (0000022C249D3AC8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -59,3 +59,12 @@
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
