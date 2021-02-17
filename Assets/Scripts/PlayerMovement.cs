@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     public float jump_force = 10f;
 
     private float vertical_Velocity;
+
+    public bool isMoving = false;
     // Start is called before the first frame update
 
     void Awake()
@@ -37,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
         ApplyGravity();
 
         character_controller.Move(move_Direction); // because character controllers are crazy
+        isMoving = true;
     } // move player
 
     void ApplyGravity()
