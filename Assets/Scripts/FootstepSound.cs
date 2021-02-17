@@ -12,6 +12,8 @@ public class FootstepSound : MonoBehaviour
     public float[,,] mSplatmapData;
     public int mNumTextures;
 
+    public FMOD.Studio.EventInstance footstepEvent;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,7 @@ public class FootstepSound : MonoBehaviour
     
         mSplatmapData = mTerrainData.GetAlphamaps(0, 0, alphamapWidth, alphamapHeight);
         mNumTextures = mSplatmapData.Length / (alphamapWidth * alphamapHeight);
+        footstepEvent = FMODUnity.RuntimeManager.CreateInstance(SoundManager.mainAudio.footsteps);
     }
 
     // Update is called once per frame
@@ -40,6 +43,7 @@ public class FootstepSound : MonoBehaviour
             {
                 case 1:
                     Debug.Log("Surface 1");
+
                     break;
                 case 2:
                     Debug.Log("Surface 2");

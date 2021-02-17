@@ -20,7 +20,9 @@ public class AnimationEvents : MonoBehaviour
 
     public void PlayFootstepSound()
     {
-        FootstepEvent.start();
-        FootstepEvent.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        //FootstepEvent.start();
+        //FootstepEvent.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Footsteps");
     }
 }

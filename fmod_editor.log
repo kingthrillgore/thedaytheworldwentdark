@@ -9,46 +9,871 @@
 [LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000022C872FCB28 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000029405DF1B48 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000022C220C83F8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000022C220C83F8
-[LOG] SoundI::release                          : Hub NPC Tutorial (0000022CD1E49F48)
-[LOG] SoundI::release                          :     Hub NPC Tutorial (0000022C51D2C068)
-[LOG] SoundI::release                          :     Hub NPC Tutorial (0000022C220C5668)
-[LOG] SoundI::release                          : Dog_Panting_Loop (0000022CD1E496D8)
-[LOG] SoundI::release                          :     Dog_Panting_Loop (0000022C51D2DF48)
-[LOG] SoundI::release                          :     Dog_Panting_Loop (0000022C220C23C8)
-[LOG] SoundI::release                          : main_theme__v00r05_Ambiance (0000022CD1E4AB18)
-[LOG] SoundI::release                          :     main_theme__v00r05_Ambiance (0000022C51D2E908)
-[LOG] SoundI::release                          :     main_theme__v00r05_Ambiance (0000022C220C59C8)
-[LOG] SoundI::release                          : Doodad_Campfire_Loop (0000022CD1E49888)
-[LOG] SoundI::release                          :     Doodad_Campfire_Loop (0000022C51D2D728)
-[LOG] SoundI::release                          :     Doodad_Campfire_Loop (0000022C220C2728)
-[LOG] SoundI::release                          : NightAmb1 (0000022CD1E4A608)
-[LOG] SoundI::release                          :     NightAmb1 (0000022C51D2EC48)
-[LOG] SoundI::release                          :     NightAmb1 (0000022C220C83F8)
-[LOG] SoundI::release                          :  (0000022CD1CEEC08)
-[LOG] SoundI::release                          :     OneOff_Owl_01 (0000022C871EF428)
-[LOG] SoundI::release                          :  (0000022CD1CEF058)
-[LOG] SoundI::release                          :     OneOff_Owl_02 (0000022C871EF5C8)
-[LOG] SoundI::release                          :  (0000022CD1CEF4A8)
-[LOG] SoundI::release                          :     OneOff_Owl_03 (0000022C871EF908)
-[LOG] SoundI::release                          :  (0000022CD1CEC818)
-[LOG] SoundI::release                          :     OneOff_Owl_04 (0000022C249D3FA8)
-[LOG] SoundI::release                          :  (0000022CD1CEE648)
-[LOG] SoundI::release                          :     OneOff_Seagull_01 (0000022C249D3E08)
-[LOG] SoundI::release                          :  (0000022CD1CECF48)
-[LOG] SoundI::release                          :     OneOff_Seagull_02 (0000022C871EF768)
-[LOG] SoundI::release                          :  (0000022CD1CEF338)
-[LOG] SoundI::release                          :     OneOff_Seagull_03 (0000022C871EFAA8)
-[LOG] SoundI::release                          :  (0000022CD1CED958)
-[LOG] SoundI::release                          :     OneOff_Seagull_04 (0000022C249D3AC8)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002966690D228 : node = 0000029642519930
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002966690D228
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000029642519A40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Dog_Panting_Loop', format=5, channels=1, frequency=48000, lengthbytes=129184, lengthpcm=671983, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.472046.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002966690D228
+[LOG] SoundI::release                          : Dog_Panting_Loop (00000296A922E778)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (00000296420163A8)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (00000296A9232288)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A922E0B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A922E0B8
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000029666912328 : node = 000002964251A6F0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029666912328
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251A800
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Dog_Panting_Loop', format=5, channels=1, frequency=48000, lengthbytes=129184, lengthpcm=671983, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.472046.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029666912328
+[LOG] SoundI::release                          : Dog_Panting_Loop (000002966690D228)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (000002962BC39698)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (000002966690F748)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A922E0B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A922E0B8
+[LOG] SoundI::release                          : Hub NPC Tutorial (00000296A9231F28)
+[LOG] SoundI::release                          :     Hub NPC Tutorial (000002964201C048)
+[LOG] SoundI::release                          :     Hub NPC Tutorial (00000296A922E0B8)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000296669129E8 : node = 000002964251A330
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296669129E8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251A440
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Dog_Panting_Loop', format=5, channels=1, frequency=48000, lengthbytes=129184, lengthpcm=671983, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.472046.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296669129E8
+[LOG] SoundI::release                          : Dog_Panting_Loop (0000029666912328)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (0000029642017728)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (0000029666912EF8)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000296669135B8 : node = 000002964251AE70
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296669135B8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251AF80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Doodad_Campfire_Loop', format=5, channels=1, frequency=48000, lengthbytes=525792, lengthpcm=2640000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.467743.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296669135B8
+[LOG] SoundI::release                          : Doodad_Campfire_Loop (00000296A92311A8)
+[LOG] SoundI::release                          :     Doodad_Campfire_Loop (0000029642016208)
+[LOG] SoundI::release                          :     Doodad_Campfire_Loop (00000296A92325E8)
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002966690E158 : node = 000002964251AFB0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002966690E158
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251B0C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Dog_Panting_Loop', format=5, channels=1, frequency=48000, lengthbytes=129184, lengthpcm=671983, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.472046.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002966690E158
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SoundI::release                          : Dog_Panting_Loop (00000296669129E8)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (00000296FEF5C6C8)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (00000296669130A8)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029666911758
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029666911758
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000296A922E0B8 : node = 000002964251A5B0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A922E0B8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251A6C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Woods', format=5, channels=2, frequency=48000, lengthbytes=810272, lengthpcm=2885426, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.041595.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A922E0B8
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000296A92325E8 : node = 000002964251A470
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A92325E8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251A580
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Dog_Panting_Loop', format=5, channels=1, frequency=48000, lengthbytes=129184, lengthpcm=671983, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.472046.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A92325E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A9232CA8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A9232CA8
+[LOG] SoundI::release                          : Dog_Panting_Loop (000002966690E158)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (0000029642019FC8)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (000002966690FFB8)
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000296A923C7E8 : node = 0000029642519570
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A923C7E8
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 00000296A923D208 : node = 000002964251A970
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000029642519680
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Island', format=5, channels=2, frequency=48000, lengthbytes=634880, lengthpcm=2296301, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.165771.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A923C7E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A923D208
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251AA80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Frogs_Loop', format=5, channels=2, frequency=48000, lengthbytes=936672, lengthpcm=2952000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.596497.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A923D208
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000029666911248 : node = 0000029642519F70
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029666911248
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251A080
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='NightAmb1', format=5, channels=2, frequency=48000, lengthbytes=1776864, lengthpcm=6144000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029666911248
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296669130A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296669130A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002966690FC58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002966690FC58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296669129E8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296669129E8
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002966690E158 : node = 000002964251A6F0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002966690E158
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 00000295E1AAFB08 : node = 000002964251AAB0
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251A800
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Island', format=5, channels=2, frequency=48000, lengthbytes=634880, lengthpcm=2296301, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.165771.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002966690E158
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000295E1AAFB08
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251ABC0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Frogs_Loop', format=5, channels=2, frequency=48000, lengthbytes=936672, lengthpcm=2952000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.596497.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000295E1AAFB08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000295E1AAF5F8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000295E1AAF5F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000295E1AAEF38
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000295E1AAEF38
+[LOG] SoundI::release                          : NightAmb1 (00000296A9230428)
+[LOG] SoundI::release                          :     NightAmb1 (00000296420180E8)
+[LOG] SoundI::release                          :     NightAmb1 (00000296A9232E58)
+[LOG] SoundI::release                          : Ambience_Woods (00000296A922E0B8)
+[LOG] SoundI::release                          :     Ambience_Woods (000002962B75AD48)
+[LOG] SoundI::release                          :     Ambience_Woods (00000296A9232CA8)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SoundI::release                          : Ambience_Frogs_Loop (00000296A923D208)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (000002962B75A6C8)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (000002966690FC58)
+[LOG] SoundI::release                          : Ambience_Island (00000296A923C7E8)
+[LOG] SoundI::release                          :     Ambience_Island (000002962B75AEE8)
+[LOG] SoundI::release                          :     Ambience_Island (00000296669130A8)
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000296A92311A8 : node = 000002964251A830
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A92311A8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251A940
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='NightAmb1', format=5, channels=2, frequency=48000, lengthbytes=1776864, lengthpcm=6144000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A92311A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A922E778
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A922E778
+[LOG] SoundI::release                          : NightAmb1 (0000029666911248)
+[LOG] SoundI::release                          :     NightAmb1 (000002962B75B088)
+[LOG] SoundI::release                          :     NightAmb1 (00000296669129E8)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000296A9232288 : node = 000002964251A970
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A9232288
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251AA80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Dog_Panting_Loop', format=5, channels=1, frequency=48000, lengthbytes=129184, lengthpcm=671983, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.472046.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A9232288
+[LOG] SoundI::release                          : Dog_Panting_Loop (00000296A92325E8)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (000002962B75B228)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (00000296A923D8C8)
+[LOG] SoundI::release                          : Ambience_Frogs_Loop (00000295E1AAFB08)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (000002964201B348)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (00000295E1AAEF38)
+[LOG] SoundI::release                          : Ambience_Island (000002966690E158)
+[LOG] SoundI::release                          :     Ambience_Island (0000029642017728)
+[LOG] SoundI::release                          :     Ambience_Island (00000295E1AAF5F8)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000296A9232CA8 : node = 00000296425197F0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A9232CA8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000029642519900
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Woods', format=5, channels=2, frequency=48000, lengthbytes=810272, lengthpcm=2885426, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.041595.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A9232CA8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A923D8C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A923D8C8
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000296A92316B8 : node = 000002964251AFB0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A92316B8
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 00000296A923C7E8 : node = 00000296425191B0
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251B0C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Island', format=5, channels=2, frequency=48000, lengthbytes=634880, lengthpcm=2296301, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.165771.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A92316B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A923C7E8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000296425192C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Frogs_Loop', format=5, channels=2, frequency=48000, lengthbytes=936672, lengthpcm=2952000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.596497.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A923C7E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A923CEA8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A923CEA8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A923D208
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A923D208
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000029666911248 : node = 0000029642519930
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029666911248
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000029642519A40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='NightAmb1', format=5, channels=2, frequency=48000, lengthbytes=1776864, lengthpcm=6144000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029666911248
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029666912EF8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029666912EF8
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002966690FC58 : node = 0000029642519A70
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002966690FC58
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 00000296669130A8 : node = 0000029642519BB0
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000029642519B80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Island', format=5, channels=2, frequency=48000, lengthbytes=634880, lengthpcm=2296301, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.165771.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002966690FC58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296669130A8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000029642519CC0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Frogs_Loop', format=5, channels=2, frequency=48000, lengthbytes=936672, lengthpcm=2952000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.596497.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296669130A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029666912328
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029666912328
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029666913918
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029666913918
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000295E1AAF7A8 : node = 000002964251ABF0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000295E1AAF7A8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251AD00
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='NightAmb1', format=5, channels=2, frequency=48000, lengthbytes=1776864, lengthpcm=6144000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000295E1AAF7A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000295E1AAFB08
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000295E1AAFB08
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000295E1AAF0E8 : node = 000002964251A330
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000295E1AAF0E8
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 00000295E1A451E8 : node = 0000029642519E30
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251A440
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Island', format=5, channels=2, frequency=48000, lengthbytes=634880, lengthpcm=2296301, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.165771.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000295E1AAF0E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000295E1A451E8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000029642519F40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Frogs_Loop', format=5, channels=2, frequency=48000, lengthbytes=936672, lengthpcm=2952000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.596497.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000295E1A451E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000295E1A45548
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000295E1A45548
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000295E1A44468
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000295E1A44468
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000029665C4C5C8 : node = 0000029642519CF0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029665C4C5C8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000029642519E00
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='NightAmb1', format=5, channels=2, frequency=48000, lengthbytes=1776864, lengthpcm=6144000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029665C4C5C8
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029665C4C0B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029665C4C0B8
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000296668A8F78 : node = 00000296425192F0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296668A8F78
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSound                     :     setdata soundi = 00000296668AD2F8 : node = 0000029642519430
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000029642519400
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Island', format=5, channels=2, frequency=48000, lengthbytes=634880, lengthpcm=2296301, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.165771.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296668A8F78
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296668AD2F8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000029642519540
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Frogs_Loop', format=5, channels=2, frequency=48000, lengthbytes=936672, lengthpcm=2952000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.596497.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296668AD2F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A9232E58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A9232E58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A9230AE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A9230AE8
+[LOG] SoundI::release                          : NightAmb1 (00000296A92311A8)
+[LOG] SoundI::release                          :     NightAmb1 (0000029641A46078)
+[LOG] SoundI::release                          :     NightAmb1 (00000296A922E778)
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000296A922E778 : node = 000002964251AAB0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A922E778
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251ABC0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Dog_Panting_Loop', format=5, channels=1, frequency=48000, lengthbytes=129184, lengthpcm=671983, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.472046.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A922E778
+[LOG] SoundI::release                          : Dog_Panting_Loop (00000296A9232288)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (000002962B75B088)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (00000296A9232438)
+[LOG] SoundI::release                          : Ambience_Woods (00000296A9232CA8)
+[LOG] SoundI::release                          :     Ambience_Woods (0000029641A478D8)
+[LOG] SoundI::release                          :     Ambience_Woods (00000296A923D8C8)
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000296A9232288 : node = 00000296425197F0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A9232288
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000029642519900
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='NightAmb1', format=5, channels=2, frequency=48000, lengthbytes=1776864, lengthpcm=6144000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A9232288
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A9232438
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A9232438
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000296A923CB48 : node = 0000029642519570
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000296A92311A8 : node = 0000029642519F70
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A923CB48
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000029642519680
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Island', format=5, channels=2, frequency=48000, lengthbytes=634880, lengthpcm=2296301, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.165771.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A923CB48
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A92311A8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251A080
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Frogs_Loop', format=5, channels=2, frequency=48000, lengthbytes=936672, lengthpcm=2952000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.596497.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A92311A8
+[LOG] SoundI::release                          : Ambience_Frogs_Loop (00000296A923C7E8)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (0000029641A46A38)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (00000296A923D208)
+[LOG] SoundI::release                          : Ambience_Island (00000296A92316B8)
+[LOG] SoundI::release                          :     Ambience_Island (0000029641A46BD8)
+[LOG] SoundI::release                          :     Ambience_Island (00000296A923CEA8)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A92325E8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A92325E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029665D4F4D8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029665D4F4D8
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000296A923CEA8 : node = 000002964251A470
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] SoundI::release                          : NightAmb1 (0000029666911248)
+[LOG] SoundI::release                          :     NightAmb1 (000002962B75AEE8)
+[LOG] SoundI::release                          :     NightAmb1 (0000029666912EF8)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A923CEA8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251A580
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='NightAmb1', format=5, channels=2, frequency=48000, lengthbytes=1776864, lengthpcm=6144000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A923CEA8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A923D208
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A923D208
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000296669129E8 : node = 000002964251A0B0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000029666911FC8 : node = 000002964251A5B0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296669129E8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251A1C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Island', format=5, channels=2, frequency=48000, lengthbytes=634880, lengthpcm=2296301, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.165771.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296669129E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029666911FC8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251A6C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Frogs_Loop', format=5, channels=2, frequency=48000, lengthbytes=936672, lengthpcm=2952000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.596497.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029666911FC8
+[LOG] SoundI::release                          : Ambience_Frogs_Loop (00000296669130A8)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (000002962B75A6C8)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (0000029666913918)
+[LOG] SoundI::release                          : Ambience_Island (000002966690FC58)
+[LOG] SoundI::release                          :     Ambience_Island (000002962B75AA08)
+[LOG] SoundI::release                          :     Ambience_Island (0000029666912328)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029666912EF8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029666912EF8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000295E1A45038
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000295E1A45038
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002966690E158 : node = 0000029642519930
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002966690E158
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000029642519A40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='NightAmb1', format=5, channels=2, frequency=48000, lengthbytes=1776864, lengthpcm=6144000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002966690E158
+[LOG] SoundI::release                          : NightAmb1 (00000295E1AAF7A8)
+[LOG] SoundI::release                          :     NightAmb1 (0000029641A47C18)
+[LOG] SoundI::release                          :     NightAmb1 (00000295E1AAFB08)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029666911758
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029666911758
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029666913918
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029666913918
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000295E1AAFB08 : node = 000002964251A6F0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000295E1AAFB08
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 00000295E1AAF7A8 : node = 0000029642519A70
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251A800
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Island', format=5, channels=2, frequency=48000, lengthbytes=634880, lengthpcm=2296301, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.165771.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000295E1AAFB08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000295E1AAF7A8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000029642519B80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Ambience_Frogs_Loop', format=5, channels=2, frequency=48000, lengthbytes=936672, lengthpcm=2952000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.596497.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000295E1AAF7A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A922FBB8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A922FBB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A9232CA8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A9232CA8
+[LOG] SystemI::createSound                     : filename = TheDayTheWorldWentDark/Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000029665D4A3C8 : node = 000002964251A970
+[LOG] SystemI::createSound                     : add node to async list : head = 0000029641EC3CC8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000029665D4A3C8
+[LOG] SystemI::createSoundInternal             :     Create name='TheDayTheWorldWentDark/Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17807104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 53152
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002964251AA80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='NightAmb1', format=5, channels=2, frequency=48000, lengthbytes=1776864, lengthpcm=6144000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000029665D4A3C8
+[LOG] SoundI::release                          : Ambience_Frogs_Loop (00000295E1A451E8)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (000002962B75A528)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (00000295E1A44468)
+[LOG] SoundI::release                          : Ambience_Island (00000295E1AAF0E8)
+[LOG] SoundI::release                          :     Ambience_Island (000002962B75AD48)
+[LOG] SoundI::release                          :     Ambience_Island (00000295E1A45548)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000296A92316B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000296A92316B8
+[LOG] SoundI::release                          : NightAmb1 (0000029665C4C5C8)
+[LOG] SoundI::release                          :     NightAmb1 (000002964201B9C8)
+[LOG] SoundI::release                          :     NightAmb1 (0000029665C4C0B8)
+[LOG] SoundI::release                          : Ambience_Frogs_Loop (00000296668AD2F8)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (0000029641A47A78)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (00000296A9230AE8)
+[LOG] SoundI::release                          : Ambience_Island (00000296668A8F78)
+[LOG] SoundI::release                          :     Ambience_Island (0000029641A46D78)
+[LOG] SoundI::release                          :     Ambience_Island (00000296A9232E58)
+[LOG] SoundI::release                          : NightAmb1 (00000296A9232288)
+[LOG] SoundI::release                          :     NightAmb1 (000002962B75ABA8)
+[LOG] SoundI::release                          :     NightAmb1 (00000296A9232438)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SoundI::release                          : Ambience_Frogs_Loop (00000296A92311A8)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (000002962B75B228)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (0000029665D4F4D8)
+[LOG] SoundI::release                          : Ambience_Island (00000296A923CB48)
+[LOG] SoundI::release                          :     Ambience_Island (000002962B75B088)
+[LOG] SoundI::release                          :     Ambience_Island (00000296A92325E8)
+[LOG] SoundI::release                          : NightAmb1 (00000296A923CEA8)
+[LOG] SoundI::release                          :     NightAmb1 (000002962B75AEE8)
+[LOG] SoundI::release                          :     NightAmb1 (00000296A923D208)
+[LOG] SoundI::release                          : Dog_Panting_Loop (00000296A922E778)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (0000029641A47598)
+[LOG] SoundI::release                          :     Dog_Panting_Loop (00000295E1A44E88)
+[LOG] SoundI::release                          : main_theme__v00r05_Ambiance (00000296A9234958)
+[LOG] SoundI::release                          :     main_theme__v00r05_Ambiance (0000029642019468)
+[LOG] SoundI::release                          :     main_theme__v00r05_Ambiance (00000296A9232948)
+[LOG] SoundI::release                          : Ambience_Frogs_Loop (00000295E1AAF7A8)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (0000029641A46218)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (00000296A9232CA8)
+[LOG] SoundI::release                          : Ambience_Island (00000295E1AAFB08)
+[LOG] SoundI::release                          :     Ambience_Island (0000029641A47C18)
+[LOG] SoundI::release                          :     Ambience_Island (00000296A922FBB8)
+[LOG] SoundI::release                          : NightAmb1 (000002966690E158)
+[LOG] SoundI::release                          :     NightAmb1 (000002941E54BED8)
+[LOG] SoundI::release                          :     NightAmb1 (0000029666913918)
+[LOG] SoundI::release                          : NightAmb1 (0000029665D4A3C8)
+[LOG] SoundI::release                          :     NightAmb1 (00000296420173E8)
+[LOG] SoundI::release                          :     NightAmb1 (00000296A92316B8)
+[LOG] SoundI::release                          : Doodad_Campfire_Loop (00000296669135B8)
+[LOG] SoundI::release                          :     Doodad_Campfire_Loop (000002964201B1A8)
+[LOG] SoundI::release                          :     Doodad_Campfire_Loop (0000029666911758)
+[LOG] SoundI::release                          : Ambience_Frogs_Loop (0000029666911FC8)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (000002941E54B858)
+[LOG] SoundI::release                          :     Ambience_Frogs_Loop (00000295E1A45038)
+[LOG] SoundI::release                          : Ambience_Island (00000296669129E8)
+[LOG] SoundI::release                          :     Ambience_Island (000002941E54BB98)
+[LOG] SoundI::release                          :     Ambience_Island (0000029666912EF8)
+[LOG] SoundI::release                          :  (000002941E5BA838)
+[LOG] SoundI::release                          :     Footstep_Dock_01 (00000296FEEA7E48)
+[LOG] SoundI::release                          :  (000002963F5A11D8)
+[LOG] SoundI::release                          :     Footstep_Dock_02 (000002941A420E18)
+[LOG] SoundI::release                          :  (000002963F5A0658)
+[LOG] SoundI::release                          :     Footstep_Dock_03 (000002941A420FB8)
+[LOG] SoundI::release                          :  (000002941E5BB528)
+[LOG] SoundI::release                          :     Footstep_Dock_04 (00000296FEEA8188)
+[LOG] SoundI::release                          :  (000002941E532768)
+[LOG] SoundI::release                          :     Footstep_Dock_05 (000002962BBC48A8)
+[LOG] SoundI::release                          :  (000002963F5A0C18)
+[LOG] SoundI::release                          :     Footstep_Woods_01 (000002941A4202B8)
+[LOG] SoundI::release                          :  (000002941E5BA9A8)
+[LOG] SoundI::release                          :     Footstep_Woods_02 (00000296FEEA77C8)
+[LOG] SoundI::release                          :  (000002963F5A07C8)
+[LOG] SoundI::release                          :     Footstep_Woods_03 (00000296FEEA7B08)
+[LOG] SoundI::release                          :  (00000296FF2412D8)
+[LOG] SoundI::release                          :     Footstep_Woods_04 (00000296FEEA8328)
+[LOG] SoundI::release                          :  (000002941E532488)
+[LOG] SoundI::release                          :     Footstep_Woods_05 (000002962BBC4F28)
+[LOG] SoundI::release                          :  (000002963F5A04E8)
+[LOG] SoundI::release                          :     Footstep_Sand_01 (000002941A4205F8)
+[LOG] SoundI::release                          :  (000002963F5A1068)
+[LOG] SoundI::release                          :     Footstep_Sand_02 (000002941A420C78)
+[LOG] SoundI::release                          :  (000002963F5A0EF8)
+[LOG] SoundI::release                          :     Footstep_Sand_03 (000002941A420798)
+[LOG] SoundI::release                          :  (000002941E5328D8)
+[LOG] SoundI::release                          :     Footstep_Sand_04 (000002962BBC4BE8)
+[LOG] SoundI::release                          :  (00000296FF241A08)
+[LOG] SoundI::release                          :     Footstep_Sand_05 (00000296FEEA7FE8)
+[LOG] SoundI::release                          :  (000002941E532038)
+[LOG] SoundI::release                          :     Footstep_Grass_03 (000002962BBC5408)
+[LOG] SoundI::release                          :  (000002941E531D58)
+[LOG] SoundI::release                          :     Footstep_Grass_05 (000002962BBC4D88)
+[LOG] SoundI::release                          :  (000002941E532A48)
+[LOG] SoundI::release                          :     Footstep_Grass_04 (000002962BBC50C8)
+[LOG] SoundI::release                          :  (00000296FF240E88)
+[LOG] SoundI::release                          :     OneOff_Owl_01 (00000296FEEA7968)
+[LOG] SoundI::release                          :  (000002963F5A0D88)
+[LOG] SoundI::release                          :     OneOff_Owl_02 (000002941A420AD8)
+[LOG] SoundI::release                          :  (000002941E532318)
+[LOG] SoundI::release                          :     OneOff_Owl_03 (000002962BBC4A48)
+[LOG] SoundI::release                          :  (000002941E531EC8)
+[LOG] SoundI::release                          :     OneOff_Owl_04 (000002963FB0CAF8)
+[LOG] SoundI::release                          :  (000002941E5325F8)
+[LOG] SoundI::release                          :     OneOff_Seagull_01 (000002962BBC55A8)
+[LOG] SoundI::release                          :  (000002963F5A0938)
+[LOG] SoundI::release                          :     OneOff_Seagull_02 (000002941A420938)
+[LOG] SoundI::release                          :  (000002963F5A0AA8)
+[LOG] SoundI::release                          :     OneOff_Seagull_03 (000002941A420458)
+[LOG] SoundI::release                          :  (000002941E5321A8)
+[LOG] SoundI::release                          :     OneOff_Seagull_04 (000002962BBC5268)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -59,6 +884,13 @@
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
