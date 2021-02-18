@@ -43,10 +43,12 @@ public class FootstepSound : MonoBehaviour
             {
                 case 1:
                     Debug.Log("Surface 1");
+                   footstepEvent.setParameterByName("Surface", 1f); 
 
                     break;
                 case 2:
                     Debug.Log("Surface 2");
+                    footstepEvent.setParameterByName("Surface", 2f);
                     break;
                 default:
                     Debug.Log("None");
