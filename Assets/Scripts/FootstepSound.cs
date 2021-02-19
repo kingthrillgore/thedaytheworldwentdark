@@ -36,22 +36,25 @@ public class FootstepSound : MonoBehaviour
             Debug.Log("Colliding, duh");
 
             int terrainIdx = GetActiveTerrainTextureIdx();
-            Debug.Log(terrainIdx);
+            //Debug.Log(terrainIdx);
 
             //Here is where you would add your sound calls based on the Switch/Case
             switch (terrainIdx)
             {
+                case 0:
+                    Debug.Log("Surface 0 (Sand/Beach)");
+                    break;
                 case 1:
-                    Debug.Log("Surface 1");
-                   footstepEvent.setParameterByName("Surface", 1f); 
-
+                    Debug.Log("Surface 1 (Grass)");
+                    footstepEvent.setParameterByName("Surface", 1f); 
                     break;
                 case 2:
-                    Debug.Log("Surface 2");
+                    Debug.Log("Surface 2 (Not sure what)");
                     footstepEvent.setParameterByName("Surface", 2f);
                     break;
                 default:
                     Debug.Log("None");
+                    Debug.Log("Terrain Identifier: " + terrainIdx);
                     break;
             }
         }
