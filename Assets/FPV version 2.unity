@@ -5221,8 +5221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23f87d37cda7dcd43895cbeacec59fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  height: 0
-  mTerrainData: {fileID: 0}
+  height: 3
+  mTerrainData: {fileID: 15600000, guid: 5cdf2ba34d7a83b42b0ac76c137267d7, type: 2}
   alphamapWidth: 0
   alphamapHeight: 0
   mNumTextures: 0
