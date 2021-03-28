@@ -857,12 +857,35 @@ MonoBehaviour:
   Path: TheDayTheWorldWentDark/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637484050851265845
+  lastModified: 637524817090000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1946
+    Value: 1990
   Exists: 1
+--- !u!114 &-3804686029705109201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/OceanAmbience
+  m_EditorClassIdentifier: 
+  Path: event:/OceanAmbience
+  guid: 1162f0bdbfbdaa4599ebb02a5e5d07cd
+  Banks:
+  - {fileID: -3298596923451118116}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 80116
 --- !u!114 &-3621530601869680044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1006,7 +1029,7 @@ MonoBehaviour:
   Path: TheDayTheWorldWentDark/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637484050851245900
+  lastModified: 637524817090000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1482,12 +1505,13 @@ MonoBehaviour:
   - {fileID: 4673247508452811123}
   - {fileID: 9098162027946677840}
   - {fileID: -7178946308373535684}
+  - {fileID: -3804686029705109201}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3298596923451118116}
   StringsBanks:
   - {fileID: -3917331194774442718}
-  stringsBankWriteTime: 637484050851265845
+  stringsBankWriteTime: 637524817090000000
   cacheVersion: 6
 --- !u!114 &245886397462548191
 MonoBehaviour:
@@ -1694,6 +1718,26 @@ MonoBehaviour:
   m_Name: parameter:/Footsteps/Surface
   m_EditorClassIdentifier: 
   Name: Surface
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &1347084750549799295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambience/AmbienceType
+  m_EditorClassIdentifier: 
+  Name: AmbienceType
   Min: 0
   Max: 3
   Default: 0
@@ -2004,8 +2048,28 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 4990
+  Length: 4490
 --- !u!114 &3273143365818770169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &3396950368517707799
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2170,6 +2234,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &4138035900775854423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &4673247508452811123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2213,7 +2297,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 9115904273059999052}
+  - {fileID: 3396950368517707799}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -2277,10 +2361,30 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -2267202358345034501}
+  - {fileID: 1347084750549799295}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &5519560667276297913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambience/AmbienceType
+  m_EditorClassIdentifier: 
+  Name: AmbienceType
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &5553749811222293222
 MonoBehaviour:
   m_ObjectHideFlags: 0
